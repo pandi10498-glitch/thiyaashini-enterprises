@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiyaashini Enterprises | Pure Organic Solutions & Agro Support</title>
+  <meta name="description" content="Certified organic bio-fertilizers, biological pesticides, equipment sourcing, certified seeds, and crop monitoring in Tenkasi, Tamil Nadu." />
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    :root {
+      --primary: #0F3822;
+      --primary-light: #185A37;
+      --accent: #2EB872;
+      --gold: #E5A93C;
+      --gold-hover: #C98F28;
+      --dark-soil: #141A16;
+      --bg-cream: #FBFBF9;
+      --surface: #FFFFFF;
+      --text-main: #1D231F;
+      --text-muted: #5C6B61;
+      --border: #E3EBE5;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --shadow: 0 10px 30px rgba(15, 56, 34, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    
+    /* BUTTONS */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+    }
+    .btn-gold { background: var(--gold); color: #111; }
+    .btn-gold:hover { background: var(--gold-hover); transform: translateY(-2px); }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-light); }
+    .btn-whatsapp { background: #25D366; color: white; }
+    .btn-whatsapp:hover { background: #1EBE5D; transform: translateY(-2px); }
+
+    /* HEADER & NAV */
+    .topbar {
+      background: var(--dark-soil);
+      color: #CAD5CE;
+      font-size: 0.8rem;
+      padding: 8px 0;
+    }
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75px;
+    }
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 1.3rem;
+    }
+    .logo-text h1 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .logo-text span {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    nav ul {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: var(--transition);
+    }
+    nav ul li a:hover { color: var(--accent); }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(135deg, #0A2416 0%, #0F3822 60%, #15462C 100%);
+      color: white;
+      padding: 90px 0 100px;
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 50px;
+    }
+    .hero h2 {
+      font-size: 3.2rem;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+    .hero h2 span { color: var(--gold); }
+    .hero p {
+      font-size: 1.1rem;
+      color: #CBE0D4;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+    .hero-badges {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+    .hero-pill {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      color: #E0F2E9;
+    }
+    .hero-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-lg);
+      padding: 35px;
+      backdrop-filter: blur(12px);
+    }
+    .stat-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .stat-box {
+      background: rgba(0,0,0,0.2);
+      padding: 16px;
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--accent);
+    }
+    .stat-box h4 { font-size: 1.6rem; color: var(--gold); }
+    .stat-box p { font-size: 0.8rem; color: #D1E5DA; }
+
+    /* CREDENTIALS BAR */
+    .cred-strip {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .cred-strip .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      text-align: center;
+    }
+    .cred-strip h5 { color: var(--primary); font-size: 0.95rem; }
+    .cred-strip p { color: var(--text-muted); font-size: 0.8rem; }
+
+    /* SECTION BASICS */
+    section { padding: 80px 0; }
+    .sec-head {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 50px;
+    }
+    .sec-tag {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .sec-head h2 { font-size: 2.3rem; color: var(--primary); margin: 8px 0; }
+    .sec-head p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* PRODUCTS */
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+    }
+    .tab-btn {
+      padding: 8px 18px;
+      border-radius: 30px;
+      border: 1px solid var(--border);
+      background: white;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+    }
+    .card-art {
+      height: 120px;
+      background: linear-gradient(135deg, var(--primary-light), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 3.5rem;
+    }
+    .card-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .card-cat {
+      font-size: 0.72rem;
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .card-body h3 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin: 6px 0;
+      min-height: 2.8em;
+    }
+    .card-comp {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: #F3F7F4;
+      padding: 8px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+    .card-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .price {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .order-btn {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+
+    /* SERVICES (MACHINERY & SEEDS) */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .service-box {
+      background: white;
+      padding: 30px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .service-icon {
+      font-size: 2.4rem;
+      color: var(--gold);
+      margin-bottom: 15px;
+    }
+    .service-box h3 { font-size: 1.25rem; color: var(--primary); margin-bottom: 10px; }
+    .service-box p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 18px; }
+
+    /* ADVISORY & VISIT FORMS */
+    .form-section {
+      background: linear-gradient(135deg, var(--dark-soil) 0%, #0F3822 100%);
+      color: white;
+      border-radius: var(--radius-lg);
+      padding: 50px 35px;
+      margin: 40px 0;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .input-group {
+      margin-bottom: 16px;
+    }
+    .input-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #D3E5DB;
+    }
+    .input-group input, .input-group select, .input-group textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      color: white;
+      font-family: inherit;
+    }
+    .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
+      outline: 2px solid var(--accent);
+      background: rgba(0,0,0,0.3);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0A140E;
+      color: #9DB3A6;
+      padding: 60px 0 25px;
+      font-size: 0.88rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-grid h4 { color: white; margin-bottom: 14px; font-size: 1.05rem; }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.8rem;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 850px) {
+      .hero-grid, .form-grid, .footer-grid { grid-template-columns: 1fr; }
+      nav ul { display: none; }
+      .hero h2 { font-size: 2.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+      <div>
+        <i class="fa-solid fa-location-dot"></i> Echchanda, Tenkasi, Tamil Nadu - 627857
+      </div>
+      <div>
+        <span>GSTIN: <strong>33EGLPM2274R1Z0</strong></span> &nbsp;|&nbsp;
+        <span>Seed Lic: <strong>1340/TNV/2026</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo-box">
+        <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div class="logo-text">
+          <h1>THIYAASHINI</h1>
+          <span>Enterprises • Organic Choice</span>
+        </div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products (21)</a></li>
+          <li><a href="#machinery">Equipment</a></li>
+          <li><a href="#seeds">Seeds</a></li>
+          <li><a href="#advisory">Crop Advisory</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/919360283922?text=Hello%20Thiyaashini%20Enterprises,%20I%20need%20farming%20assistance." target="_blank" class="btn btn-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Chat with Us
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badges">
+          <span class="hero-pill"><i class="fa-solid fa-certificate text-gold"></i> TNAU Certified</span>
+          <span class="hero-pill"><i class="fa-solid fa-award text-gold"></i> G2 Certified</span>
+          <span class="hero-pill">100% Bio-Organic</span>
+        </div>
+        <h2>From Nature For Nature — <span>Your Yield Partner.</span></h2>
+        <p>Premium bio-fertilizers, biological pest protection, on-demand machinery sourcing, and direct field support for high-productivity farming in Tamil Nadu.</p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="#products" class="btn btn-gold"><i class="fa-solid fa-bottle-droplet"></i> Explore 21 Bio-Products</a>
+          <a href="#advisory" class="btn btn-primary" style="border: 1px solid var(--accent);"><i class="fa-solid fa-plant-wilt"></i> Free Crop Advice</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3 style="color:var(--gold); font-size:1.4rem; margin-bottom:10px;">Agricultural Excellence</h3>
+        <p style="font-size:0.92rem; color:#D3E2D8;">Marketed by Thiyaashini Enterprises and manufactured by Attur Kanishka Organics Pvt. Ltd. Backed by expert agricultural monitoring.</p>
+        <div class="stat-row">
+          <div class="stat-box">
+            <h4>21+</h4>
+            <p>Bio Solutions</p>
+          </div>
+          <div class="stat-box">
+            <h4>100%</h4>
+            <p>Safe & Non-Toxic</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS STRIP -->
+  <div class="cred-strip">
+    <div class="container">
+      <div>
